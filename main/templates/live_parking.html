@@ -8,97 +8,97 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lucide-static@latest/font/lucide.css">
   <style>
-    body { margin:0; padding:0; font-family:'Montserrat', Arial, sans-serif;
-      background:linear-gradient(to bottom,#6002ee 0%,#3a1397 60%,#102178 100%); color:#421d79; min-height:100vh;}
-    .navbar{width:100%;background:linear-gradient(90deg,#be7bf6 0%,#9400ff 80%);display:flex;align-items:center;justify-content:center;gap:40px;padding:0 32px;position:relative;min-height:90px;box-sizing:border-box;}
-    .navbar-content{width:100%;max-width:1500px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;}
-    .logo-row{display:flex;align-items:center;gap:18px;}
-    .logo-row img{height:106px;width:106px;object-fit:contain;filter:drop-shadow(0 2px 10px #1d1a2e80);}
-    .site-title{font-size:1.8rem;font-weight:900;color:#ffe441;letter-spacing:1.5px;text-shadow:0 2px 8px #32246888;}
-    .marquee-bar{background:linear-gradient(90deg,#be7bf6cc 0%,#ffe441ee 85%);border-radius:16px;min-width:320px;max-width:320px;height:44px;margin:0 18px;box-shadow:0 2px 12px #963be333,0 1px 8px #ffe44135;display:flex;align-items:center;overflow:hidden;padding:0 20px;position:relative;}
-    .marquee-text{display:flex;align-items:center;white-space:nowrap;font-weight:900;color:#421d79;font-size:1.09em;animation:marquee-move 12s linear infinite;letter-spacing:.5px;text-shadow:0 1px 6px #fff8,0 1px 3px #be7bf6cc;}
-    .marquee-car-img{vertical-align:middle;display:inline-block;height:22px;margin-right:12px;margin-bottom:2px;filter:drop-shadow(0 2px 8px #ffe44190);}
-    @keyframes marquee-move{0%{transform:translateX(50%);}100%{transform:translateX(-100%);}}
-    .nav-links{display:flex;align-items:center;gap:5px;font-weight:700;font-size:.8rem;}
-    .nav-link{color:#fff;text-decoration:none;display:flex;align-items:center;gap:5px;transition:opacity .15s;opacity:.93;font-size:1.18em;font-weight:900;padding:.22em .86em;border-radius:10px;position:relative;cursor:pointer;}
-    .nav-link:hover,.nav-link:focus-visible{color:#ffd900 !important;text-shadow:0 0 14px #ffd900cc,0 0 2px #ffd900cc,0 1px 6px #fff8;outline:none;opacity:1;background:none;box-shadow:none;}
-    .nav-link.active{color:#ffd900 !important;text-shadow:0 0 14px #ffd900cc,0 0 2px #ffd900cc,0 1px 6px #fff8;background:none;box-shadow:none;}
+    body{margin:0;padding:0;font-family:'Montserrat',Arial,sans-serif;background:linear-gradient(to bottom,#6002ee 0%,#3a1397 60%,#102178 100%);color:#421d79;min-height:100vh}
+    .navbar{width:100%;background:linear-gradient(90deg,#be7bf6 0%,#9400ff 80%);display:flex;align-items:center;justify-content:center;gap:40px;padding:0 32px;position:relative;min-height:90px;box-sizing:border-box}
+    .navbar-content{width:100%;max-width:1500px;margin:0 auto;display:flex;align-items:center;justify-content:space-between}
+    .logo-row{display:flex;align-items:center;gap:18px}
+    .logo-row img{height:106px;width:106px;object-fit:contain;filter:drop-shadow(0 2px 10px #1d1a2e80)}
+    .site-title{font-size:1.8rem;font-weight:900;color:#ffe441;letter-spacing:1.5px;text-shadow:0 2px 8px #32246888}
+    .marquee-bar{background:linear-gradient(90deg,#be7bf6cc 0%,#ffe441ee 85%);border-radius:16px;min-width:320px;max-width:320px;height:44px;margin:0 18px;box-shadow:0 2px 12px #963be333,0 1px 8px #ffe44135;display:flex;align-items:center;overflow:hidden;padding:0 20px;position:relative}
+    .marquee-text{display:flex;align-items:center;white-space:nowrap;font-weight:900;color:#421d79;font-size:1.09em;animation:marquee-move 12s linear infinite;letter-spacing:.5px;text-shadow:0 1px 6px #fff8,0 1px 3px #be7bf6cc}
+    .marquee-car-img{vertical-align:middle;display:inline-block;height:22px;margin-right:12px;margin-bottom:2px;filter:drop-shadow(0 2px 8px #ffe44190)}
+    @keyframes marquee-move{0%{transform:translateX(50%)}100%{transform:translateX(-100%)}}
+    .nav-links{display:flex;align-items:center;gap:5px;font-weight:700;font-size:.8rem}
+    .nav-link{color:#fff;text-decoration:none;display:flex;align-items:center;gap:5px;transition:opacity .15s;opacity:.93;font-size:1.18em;font-weight:900;padding:.22em .86em;border-radius:10px;position:relative;cursor:pointer}
+    .nav-link:hover,.nav-link:focus-visible{color:#ffd900 !important;text-shadow:0 0 14px #ffd900cc,0 0 2px #ffd900cc,0 1px 6px #fff8;outline:none;opacity:1;background:none;box-shadow:none}
+    .nav-link.active{color:#ffd900 !important;text-shadow:0 0 14px #ffd900cc,0 0 2px #ffd900cc,0 1px 6px #fff8;background:none;box-shadow:none}
 
-    .main-wrap{max-width:1400px;margin:38px auto 0 auto;padding:0 12px 40px 12px;display:flex;gap:34px;align-items:flex-start;}
-    .card-section{flex:1.05;} .side-section{flex:1;}
-    .main-card{background:#fff;border-radius:20px;box-shadow:0 2px 14px #be7bf655;padding:20px 24px;margin-bottom:18px;}
-    .main-card h3{color:#421d79;font-size:1.2rem;font-weight:900;margin-bottom:3px;}
-    .main-card p{color:#555;font-size:1em;font-weight:500;margin-bottom:18px;}
+    .main-wrap{max-width:1400px;margin:38px auto 0 auto;padding:0 12px 40px 12px;display:flex;gap:34px;align-items:flex-start}
+    .card-section{flex:1.05}.side-section{flex:1}
+    .main-card{background:#fff;border-radius:20px;box-shadow:0 2px 14px #be7bf655;padding:20px 24px;margin-bottom:18px}
+    .main-card h3{color:#421d79;font-size:1.2rem;font-weight:900;margin-bottom:3px}
+    .main-card p{color:#555;font-size:1em;font-weight:500;margin-bottom:18px}
 
-    .spot-balls{display:flex;justify-content:center;align-items:flex-start;gap:48px;margin:26px 0 18px 0;}
-    .spot-ball{display:flex;flex-direction:column;align-items:center;cursor:pointer;min-width:90px;}
-    .spot-circle{width:24px;height:24px;border-radius:50%;margin-bottom:4px;}
-    .spot-green{background:#22c55e;} .spot-yellow{background:#fde047;} .spot-red{background:#ef4444;}
-    .spot-title{font-weight:700;color:#222;font-size:1em;}
-    .spot-desc{font-size:.93em;font-weight:600;margin-top:3px;}
-    .spot-desc.green{color:#039444;} .spot-desc.yellow{color:#ba9508;} .spot-desc.red{color:#d30820;}
+    .spot-balls{display:flex;justify-content:center;align-items:flex-start;gap:48px;margin:26px 0 18px 0}
+    .spot-ball{display:flex;flex-direction:column;align-items:center;cursor:pointer;min-width:90px}
+    .spot-circle{width:24px;height:24px;border-radius:50%;margin-bottom:4px}
+    .spot-green{background:#22c55e}.spot-yellow{background:#fde047}.spot-red{background:#ef4444}
+    .spot-title{font-weight:700;color:#222;font-size:1em}
+    .spot-desc{font-size:.93em;font-weight:600;margin-top:3px}
+    .spot-desc.green{color:#039444}.spot-desc.yellow{color:#ba9508}.spot-desc.red{color:#d30820}
 
-    .action-btns{display:flex;justify-content:center;gap:22px;margin:15px 0 0 0;}
-    .btn-action{background:#111;color:#fff;border:none;border-radius:13px;font-size:1em;padding:10px 30px;font-weight:700;cursor:pointer;transition:background .15s;display:flex;align-items:center;gap:8px;box-shadow:0 2px 8px #ccc1;}
-    .btn-action:hover{background:#2d0c7b;}
-    .gmap-card{border-radius:22px;overflow:hidden;margin-top:16px;margin-bottom:5px;border:2.5px solid #e6dcff;background:none!important;padding:0!important;box-sizing:border-box;width:100%;display:flex;flex-direction:column;}
-    #parkingMap{width:100%!important;height:610px;border-radius:22px;background:none!important;margin:0!important;padding:0!important;overflow:hidden;box-sizing:border-box;display:block;}
+    .action-btns{display:flex;justify-content:center;gap:22px;margin:15px 0 0 0}
+    .btn-action{background:#111;color:#fff;border:none;border-radius:13px;font-size:1em;padding:10px 30px;font-weight:700;cursor:pointer;transition:background .15s;display:flex;align-items:center;gap:8px;box-shadow:0 2px 8px #ccc1}
+    .btn-action:hover{background:#2d0c7b}
+    .gmap-card{border-radius:22px;overflow:hidden;margin-top:16px;margin-bottom:5px;border:2.5px solid #e6dcff;background:none!important;padding:0!important;box-sizing:border-box;width:100%;display:flex;flex-direction:column}
+    #parkingMap{width:100%!important;height:645px;border-radius:22px;background:none!important;margin:0!important;padding:0!important;overflow:hidden;box-sizing:border-box;display:block}
 
-    .side-card{background:#fff;border-radius:18px;box-shadow:0 2px 12px #be7bf650;padding:19px 23px 12px 23px;margin-bottom:18px;}
-    .side-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;}
-    .side-title{font-size:1.19rem;font-weight:900;color:#6a3be1;}
-    .side-tools{display:flex;gap:5px;flex-wrap:wrap;align-items:center;}
-    .side-btn{background:#111;color:#fff;border:none;border-radius:9px;padding:5px 19px;font-weight:800;font-size:1em;display:flex;align-items:center;gap:6px;cursor:pointer;transition:background .13s;}
-    .side-btn:hover,.side-btn:active{background:#2d0c7b;color:#ffd900;}
-    .tool-select,.tool-search{background:#fff;border:1.6px solid #e8defc;border-radius:10px;padding:8px 12px;font-weight:800;}
-    .tool-select{min-width:190px;} .tool-search{min-width:220px;}
+    .side-card{background:#fff;border-radius:18px;box-shadow:0 2px 12px #be7bf650;padding:19px 23px 12px 23px;margin-bottom:18px}
+    .side-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:6px}
+    .side-title{font-size:1.19rem;font-weight:900;color:#6a3be1}
 
-    .parking-list{max-height:700px;overflow-y:auto;display:flex;flex-direction:column;gap:13px;}
-    .parking-spot-card{background:#f9f7ff;border-radius:14px;box-shadow:0 2px 12px #be7bf620;padding:15px 24px 15px 21px;display:flex;flex-direction:column;border:1.4px solid #e3d2fc;position:relative;transition:box-shadow .22s cubic-bezier(.19,1,.22,1),border-color .18s,transform .2s cubic-bezier(.19,1,.22,1);cursor:pointer;}
-    .parking-spot-card:hover,.parking-spot-card:focus-visible{border-color:#a084ff !important;box-shadow:0 4px 28px #be7bf640,0 2px 12px #7b5fff55;transform:translateY(-2px) scale(1.018);z-index:3;}
-    .card-row{display:flex;align-items:center;justify-content:space-between;}
-    .spot-name{color:#6320c4;font-weight:900;font-size:1.13em;}
-    .spot-address{font-size:.97em;color:#8952e7;margin-bottom:2px;}
-    .badge-available{background:#fff5c3;color:#a98200;border-radius:13px;padding:3px 15px;font-size:.98em;font-weight:800;border:2px solid #ffe441;}
-    .badge-available.red{background:#ffdedf;color:#d80013;border-color:#ffbcbc;}
-    .badge-available.yellow{background:#fff8e0;color:#c5a100;border-color:#ffe984;}
-    .badge-available.green{background:#e2ffed;color:#059640;border-color:#98f3b8;}
-    .card-row2{display:flex;align-items:center;gap:14px;margin-bottom:6px;flex-wrap:wrap;}
-    .walk-dist{color:#a282ff;font-size:.99em;}
-    .walk-time{color:#8f83e6;font-size:.99em;}
-    .nav-link-mini{margin-left:auto;background:#111;color:#fff;border:none;border-radius:9px;padding:6px 10px;font-weight:800;display:flex;gap:6px;align-items:center;cursor:pointer;}
-    .nav-link-mini:hover{background:#2d0c7b;color:#ffd900;}
+    /* moved tools BELOW the description */
+    .side-tools{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0 2px 0}
+    .side-btn{background:#2e0f7a;color:#ffd900;border:none;border-radius:12px;padding:8px 20px;font-weight:900;font-size:1em;display:flex;align-items:center;gap:6px;cursor:pointer;transition:filter .13s}
+    .side-btn:hover,.side-btn:active{filter:brightness(1.1)}
+    .tools-bottom{display:flex;gap:10px}
+    .tool-select,.tool-search{background:#fff;border:1.6px solid #e8defc;border-radius:10px;padding:10px 12px;font-weight:800}
+    .tool-select{min-width:240px}.tool-search{min-width:260px}
 
-    /* status colors (restored) */
-    .status-row{display:flex;align-items:center;gap:14px;margin-bottom:2px;}
-    .status-dot{font-size:1.2em;}
-    .status-decreasing{color:#e40a1e;font-weight:800;}
-    .status-stable{color:#7d28ce;font-weight:700;}
-    .status-increasing{color:#119f41;font-weight:700;}
+    .parking-list{max-height:700px;overflow-y:auto;display:flex;flex-direction:column;gap:13px}
+    .parking-spot-card{background:#f9f7ff;border-radius:14px;box-shadow:0 2px 12px #be7bf620;padding:15px 24px 15px 21px;display:flex;flex-direction:column;border:1.4px solid #e3d2fc;position:relative;transition:box-shadow .22s cubic-bezier(.19,1,.22,1),border-color .18s,transform .2s cubic-bezier(.19,1,.22,1);cursor:pointer}
+    .parking-spot-card:hover,.parking-spot-card:focus-visible{border-color:#a084ff !important;box-shadow:0 4px 28px #be7bf640,0 2px 12px #7b5fff55;transform:translateY(-2px) scale(1.018);z-index:3}
+    .card-row{display:flex;align-items:center;justify-content:space-between}
+    .spot-name{color:#6320c4;font-weight:900;font-size:1.13em}
+    .spot-address{font-size:.97em;color:#8952e7;margin-bottom:2px}
+    .badge-available{background:#fff5c3;color:#a98200;border-radius:13px;padding:3px 15px;font-size:.98em;font-weight:800;border:2px solid #ffe441}
+    .badge-available.red{background:#ffdedf;color:#d80013;border-color:#ffbcbc}
+    .badge-available.yellow{background:#fff8e0;color:#c5a100;border-color:#ffe984}
+    .badge-available.green{background:#e2ffed;color:#059640;border-color:#98f3b8}
+    .card-row2{display:flex;align-items:center;gap:14px;margin-bottom:6px;flex-wrap:wrap}
+    .walk-dist{color:#a282ff;font-size:.99em}
+    .walk-time{color:#8f83e6;font-size:.99em}
+    .nav-link-mini{margin-left:auto;background:#111;color:#fff;border:none;border-radius:9px;padding:6px 10px;font-weight:800;display:flex;gap:6px;align-items:center;cursor:pointer}
+    .nav-link-mini:hover{background:#2d0c7b;color:#ffd900}
 
-    .modal-backdrop{display:none;position:fixed;left:0;top:0;width:100vw;height:100vh;background:rgba(36,17,78,0.18);z-index:1000;align-items:center;justify-content:center;transition:background .2s;}
-    .modal-backdrop.active{display:flex;}
-    .modal-dialog{background:#fff;border-radius:22px;box-shadow:0 4px 30px #743fe430;padding:30px 36px 26px 36px;min-width:330px;max-width:98vw;max-height:92vh;color:#421d79;position:relative;animation:modalShow .22s cubic-bezier(.22,1,.26,1);}
-    @keyframes modalShow{from{opacity:0;transform:scale(.92) translateY(48px);}to{opacity:1;transform:scale(1) translateY(0);}}
-    .modal-close{position:absolute;right:14px;top:15px;font-size:1.3em;color:#9c7be1;cursor:pointer;border:none;background:none;transition:color .16s;}
-    .modal-close:hover{color:#e43a6c;}
-    .modal-header{font-size:1.28em;font-weight:900;margin-bottom:5px;}
-    .modal-content{font-size:1.02em;margin-bottom:10px;}
-    .modal-actions{display:flex;gap:10px;}
-    .modal-actions a{text-decoration:none;}
+    .status-row{display:flex;align-items:center;gap:14px;margin-bottom:2px}
+    .status-dot{font-size:1.2em}
+    .status-decreasing{color:#e40a1e;font-weight:800}
+    .status-stable{color:#7d28ce;font-weight:700}
+    .status-increasing{color:#119f41;font-weight:700}
 
-    .custom-toast{position:fixed;left:50%;bottom:50px;transform:translateX(-50%);background:#6636d6;color:#fff;padding:17px 42px;border-radius:19px;box-shadow:0 2px 16px #9b7fff48;font-size:1.12em;font-weight:800;z-index:2000;display:none;align-items:center;gap:10px;animation:toastShow .24s cubic-bezier(.22,1,.22,1);}
-    .custom-toast.active{display:flex;}
-    @keyframes toastShow{from{opacity:0;transform:translate(-50%,40px);}to{opacity:1;transform:translate(-50%,0);}}
+    .modal-backdrop{display:none;position:fixed;left:0;top:0;width:100vw;height:100vh;background:rgba(36,17,78,0.18);z-index:1000;align-items:center;justify-content:center;transition:background .2s}
+    .modal-backdrop.active{display:flex}
+    .modal-dialog{background:#fff;border-radius:22px;box-shadow:0 4px 30px #743fe430;padding:30px 36px 26px 36px;min-width:330px;max-width:98vw;max-height:92vh;color:#421d79;position:relative;animation:modalShow .22s cubic-bezier(.22,1,.26,1)}
+    @keyframes modalShow{from{opacity:0;transform:scale(.92) translateY(48px)}to{opacity:1;transform:scale(1) translateY(0)}}
+    .modal-close{position:absolute;right:14px;top:15px;font-size:1.3em;color:#9c7be1;cursor:pointer;border:none;background:none;transition:color .16s}
+    .modal-close:hover{color:#e43a6c}
+    .modal-header{font-size:1.28em;font-weight:900;margin-bottom:5px}
+    .modal-content{font-size:1.02em;margin-bottom:10px}
+    .modal-actions{display:flex;gap:10px}
+    .modal-actions a{text-decoration:none}
 
-    @media (max-width:1100px){.main-wrap{flex-direction:column;gap:16px;}}
-    @media (max-width:700px){.main-wrap{flex-direction:column;gap:8px;} .side-section{width:100%;}}
+    .custom-toast{position:fixed;left:50%;bottom:50px;transform:translateX(-50%);background:#6636d6;color:#fff;padding:17px 42px;border-radius:19px;box-shadow:0 2px 16px #9b7fff48;font-size:1.12em;font-weight:800;z-index:2000;display:none;align-items:center;gap:10px;animation:toastShow .24s cubic-bezier(.22,1,.22,1)}
+    .custom-toast.active{display:flex}
+    @keyframes toastShow{from{opacity:0;transform:translate(-50%,40px)}to{opacity:1;transform:translate(-50%,0)}}
 
-    #loadingMask{opacity:0;pointer-events:none;transition:opacity .22s;}
-    #loadingMask.active{display:flex !important;opacity:1;pointer-events:auto;}
-    .golden-glow{color:#ffe441;font-weight:900;text-shadow:-2px -2px 2px #222,2px -2px 2px #222,-2px 2px 2px #222,2px 2px 2px #222,-1px 0px 1px #222,1px 0px 1px #222,0px -1px 1px #222,0px 1px 1px #222,0 0 14px #ffd900cc,0 0 2px #ffd900cc,0 1px 6px #fff8,0 0 18px #ffe441b0;}
-    .refresh-highlight{border:3px solid transparent;border-radius:8px;background-image:linear-gradient(white,white),linear-gradient(90deg,gold,orange,gold);background-origin:border-box;background-clip:padding-box,border-box;animation:border-glow 1s linear infinite;box-shadow:0 0 15px rgba(255,215,0,.7);}
-    @keyframes border-glow{0%{box-shadow:0 0 5px gold,0 0 10px orange;}50%{box-shadow:0 0 15px orange,0 0 30px gold;}100%{box-shadow:0 0 5px gold,0 0 10px orange;}}
+    @media (max-width:1100px){.main-wrap{flex-direction:column;gap:16px}}
+    @media (max-width:700px){.main-wrap{flex-direction:column;gap:8px}.side-section{width:100%}}
+    #loadingMask{opacity:0;pointer-events:none;transition:opacity .22s}
+    #loadingMask.active{display:flex !important;opacity:1;pointer-events:auto}
+    .golden-glow{color:#ffe441;font-weight:900;text-shadow:-2px -2px 2px #222,2px -2px 2px #222,-2px 2px 2px #222,2px 2px 2px #222,-1px 0px 1px #222,1px 0px 1px #222,0px -1px 1px #222,0px 1px 1px #222,0 0 14px #ffd900cc,0 0 2px #ffd900cc,0 1px 6px #fff8,0 0 18px #ffe441b0}
+    .refresh-highlight{border:3px solid transparent;border-radius:8px;background-image:linear-gradient(white,white),linear-gradient(90deg,gold,orange,gold);background-origin:border-box;background-clip:padding-box,border-box;animation:border-glow 1s linear infinite;box-shadow:0 0 15px rgba(255,215,0,.7)}
+    @keyframes border-glow{0%{box-shadow:0 0 5px gold,0 0 10px orange}50%{box-shadow:0 0 15px orange,0 0 30px gold}100%{box-shadow:0 0 5px gold,0 0 10px orange}}
   </style>
 </head>
 <body>
@@ -142,17 +142,24 @@
       <div class="side-card">
         <div class="side-header">
           <span class="side-title">Available Parking Spots</span>
-          <div class="side-tools">
-            <select id="streetSelect" class="tool-select">
-              <option value="__ALL__">All streets</option>
-            </select>
-            <input id="streetSearch" class="tool-search" type="search" placeholder="Search street" list="streetSuggestions" autocomplete="off"/>
-            <datalist id="streetSuggestions"></datalist>
+        </div>
+
+        <!-- Description FIRST -->
+        <p>Find the best parking spots near you with real-time availability and walking distance.</p>
+
+        <!-- Tools NOW appear UNDER the description -->
+        <div class="side-tools">
+          <select id="streetSelect" class="tool-select">
+            <option value="__ALL__">All streets</option>
+          </select>
+          <input id="streetSearch" class="tool-search" type="search" placeholder="Search street" list="streetSuggestions" autocomplete="off"/>
+          <datalist id="streetSuggestions"></datalist>
+           <div class="tools-bottom">
             <button class="side-btn" id="filterBtn"><i class="lucide lucide-filter"></i> Filter</button>
             <button class="side-btn" id="refreshBtn"><i class="lucide lucide-refresh-cw"></i> Refresh</button>
           </div>
         </div>
-        <p>Find the best parking spots near you with real-time availability and walking distance.</p>
+
         <div class="parking-list" id="parkingList"></div>
       </div>
     </div>
@@ -175,216 +182,66 @@
 function showToast(msg){const t=document.getElementById('toast');document.getElementById('toastMsg').innerText=msg;t.classList.add('active');setTimeout(()=>t.classList.remove('active'),1600);}
 
 /* Injected from Django */
-const parkingSpots = [
-  {% for spot in parking_spots %}
-  { name:"{{ spot.name|escapejs }}", address:"{{ spot.address|escapejs }}", available:{{ spot.available }}, total:{{ spot.total }},
-    distance:"{{ spot.distance|escapejs }}", walkTime:"{{ spot.walkTime|escapejs }}", price:"{{ spot.price|escapejs }}",
-    prediction:"{{ spot.prediction|escapejs }}", badge:"{{ spot.badge|default_if_none:''|escapejs }}",
-    lat:{{ spot.lat }}, lng:{{ spot.lng }} }{% if not forloop.last %},{% endif %}
-  {% endfor %}
-];
+const parkingSpots=[{% for spot in parking_spots %}{name:"{{ spot.name|escapejs }}",address:"{{ spot.address|escapejs }}",available:{{ spot.available }},total:{{ spot.total }},distance:"{{ spot.distance|escapejs }}",walkTime:"{{ spot.walkTime|escapejs }}",price:"{{ spot.price|escapejs }}",prediction:"{{ spot.prediction|escapejs }}",badge:"{{ spot.badge|default_if_none:''|escapejs }}",lat:{{ spot.lat }},lng:{{ spot.lng }}}{% if not forloop.last %},{% endif %}{% endfor %}];
 
-const ratio = s => s.total>0 ? s.available/s.total : 0;
-const spotKey = s => `${s.lat},${s.lng}`;
+const ratio=s=>s.total>0?s.available/s.total:0;
+const spotKey=s=>`${s.lat},${s.lng}`;
 
 /* Prefer street from address; fallback to name */
-function extractStreet(spot){
-  const raw = (spot.address||'').trim() || (spot.name||'').trim();
-  if(!raw) return '';
-  return raw.split('(')[0].split(',')[0].trim();
-}
+function extractStreet(spot){const raw=(spot.address||'').trim()||(spot.name||'').trim();if(!raw)return'';return raw.split('(')[0].split(',')[0].trim();}
 
 /* Build options & suggestions */
-function buildStreetOptions(list){
-  const set=new Set(); list.forEach(s=>{ const st=extractStreet(s); if(st) set.add(st); });
-  const streets=[...set].sort((a,b)=>a.localeCompare(b));
-  const sel=document.getElementById('streetSelect');
-  sel.querySelectorAll('option:not([value="__ALL__"])').forEach(o=>o.remove());
-  streets.forEach(st=>{ const o=document.createElement('option'); o.value=st; o.textContent=st; sel.appendChild(o); });
-  document.getElementById('streetSuggestions').innerHTML = streets.map(st=>`<option value="${st}"></option>`).join('');
-}
+function buildStreetOptions(list){const set=new Set();list.forEach(s=>{const st=extractStreet(s);if(st)set.add(st)});const streets=[...set].sort((a,b)=>a.localeCompare(b));const sel=document.getElementById('streetSelect');sel.querySelectorAll('option:not([value="__ALL__"])').forEach(o=>o.remove());streets.forEach(st=>{const o=document.createElement('option');o.value=st;o.textContent=st;sel.appendChild(o)});document.getElementById('streetSuggestions').innerHTML=streets.map(st=>`<option value="${st}"></option>`).join('')}
 
-/* ---- Status helpers (text + colored span) ---- */
-function statusHtml(spot, long=false){
-  let text, cls, icon;
-  switch((spot.prediction||'').toLowerCase()){
-    case 'decreasing': text = long ? 'Filling up soon' : 'Filling up'; cls='status-decreasing'; icon='trending-down'; break;
-    case 'stable':     text = long ? 'Stable' : 'Stable'; cls='status-stable'; icon='minus'; break;
-    default:           text = long ? 'More spots soon' : 'More spots soon'; cls='status-increasing'; icon='trending-up';
-  }
-  return `<span class="status-dot ${cls}"><i class="lucide lucide-${icon}"></i> ${text}</span>`;
-}
+/* Status html */
+function statusHtml(spot,long=false){let text,cls,icon;switch((spot.prediction||'').toLowerCase()){case'decreasing':text=long?'Filling up soon':'Filling up';cls='status-decreasing';icon='trending-down';break;case'stable':text='Stable';cls='status-stable';icon='minus';break;default:text='More spots soon';cls='status-increasing';icon='trending-up'}return `<span class="status-dot ${cls}"><i class="lucide lucide-${icon}"></i> ${text}</span>`}
 
 /* Header 3 pills */
-function renderSpotBalls(listData){
-  const box=document.getElementById('spotBalls');
-  const list=(listData&&listData.length?listData:parkingSpots).slice();
-  const redPool=list.filter(s=>(s.badge||'').includes('red')||s.prediction==='decreasing').sort((a,b)=>ratio(a)-ratio(b));
-  const greenPool=list.filter(s=>(s.badge||'').includes('green')||s.prediction==='increasing').sort((a,b)=>ratio(b)-ratio(a));
-  const yellowPool=list.filter(s=>(s.badge||'').includes('yellow')||s.prediction==='stable').sort((a,b)=>Math.abs(0.5-ratio(a))-Math.abs(0.5-ratio(b)));
-  const fbCrowd=list.slice().sort((a,b)=>ratio(a)-ratio(b));
-  const fbEmpty=list.slice().sort((a,b)=>ratio(b)-ratio(a));
-  const fbMid=list.slice().sort((a,b)=>Math.abs(0.5-ratio(a))-Math.abs(0.5-ratio(b)));
-  const picks=[]; const seen=new Set();
-  function take(pool){ for(const s of pool){ const k=s.name+'|'+s.address; if(!seen.has(k)){seen.add(k);picks.push(s);return;} } }
-  take(redPool.length?redPool:fbCrowd); take(greenPool.length?greenPool:fbEmpty); take(yellowPool.length?yellowPool:fbMid);
-  box.innerHTML=picks.map((s,i)=>{ const role=i===0?'red':i===1?'green':'yellow'; const cls=role==='red'?'spot-red':role==='green'?'spot-green':'spot-yellow';
-    const desc=role==='red'?'Avoid now':role==='green'?'Recommended':'Stable / moderate';
-    return `<div class="spot-ball" tabindex="0" title="${s.available}/${s.total} available • ${s.distance}, ${s.walkTime}">
-      <div class="spot-circle ${cls}"></div><span class="spot-title">${extractStreet(s)}</span><span class="spot-desc ${role}">${desc}</span></div>`;}).join('');
-  if(window.lucide) lucide.createIcons();
-}
+function renderSpotBalls(listData){const box=document.getElementById('spotBalls');const list=(listData&&listData.length?listData:parkingSpots).slice();const redPool=list.filter(s=>(s.badge||'').includes('red')||s.prediction==='decreasing').sort((a,b)=>ratio(a)-ratio(b));const greenPool=list.filter(s=>(s.badge||'').includes('green')||s.prediction==='increasing').sort((a,b)=>ratio(b)-ratio(a));const yellowPool=list.filter(s=>(s.badge||'').includes('yellow')||s.prediction==='stable').sort((a,b)=>Math.abs(0.5-ratio(a))-Math.abs(0.5-ratio(b)));const fbCrowd=list.slice().sort((a,b)=>ratio(a)-ratio(b));const fbEmpty=list.slice().sort((a,b)=>ratio(b)-ratio(a));const fbMid=list.slice().sort((a,b)=>Math.abs(0.5-ratio(a))-Math.abs(0.5-ratio(b)));const picks=[];const seen=new Set();function take(pool){for(const s of pool){const k=s.name+'|'+s.address;if(!seen.has(k)){seen.add(k);picks.push(s);return}}}take(redPool.length?redPool:fbCrowd);take(greenPool.length?greenPool:fbEmpty);take(yellowPool.length?yellowPool:fbMid);box.innerHTML=picks.map((s,i)=>{const role=i===0?'red':i===1?'green':'yellow';const cls=role==='red'?'spot-red':role==='green'?'spot-green':'spot-yellow';const desc=role==='red'?'Avoid now':role==='green'?'Recommended':'Stable / moderate';return `<div class="spot-ball" tabindex="0" title="${s.available}/${s.total} available • ${s.distance}, ${s.walkTime}"><div class="spot-circle ${cls}"></div><span class="spot-title">${extractStreet(s)}</span><span class="spot-desc ${role}">${desc}</span></div>`}).join('');if(window.lucide)lucide.createIcons()}
 
 /* Map + markers */
-let _map,_markers=[],_infoWindow,_markerByKey=new Map();
-function initParkingMap(){
-  const center={lat:-37.814,lng:144.96332};
-  _map=new google.maps.Map(document.getElementById('parkingMap'),{center,zoom:15,mapId:"DEMO_MAP_ID",streetViewControl:false,fullscreenControl:false});
-  _infoWindow=new google.maps.InfoWindow();
-  drawMarkers(parkingSpots);
-}
-function drawMarkers(list){
-  if(!_map) return;
-  _markers.forEach(m=>m.map=null); _markers=[]; _markerByKey.clear();
-  list.forEach(spot=>{
-    const img=document.createElement('img');
-    img.src="{% static 'parking-sign-lightblue.png' %}"; img.style.width="32px"; img.style.height="32px"; img.style.display="block"; img.style.cursor="pointer";
-    const marker=new google.maps.marker.AdvancedMarkerElement({map:_map,position:{lat:spot.lat,lng:spot.lng},title:spot.name,content:img});
-
-    const navUrl=googleMapsNavURL(spot.lat,spot.lng,'walking');
-    const html=`<div style="font-size:.95em;min-width:170px;padding:3px 5px;line-height:1.2;">
-      <b style="color:#5b2c91;">${spot.name}</b><br>
-      <span style="color:#555;">${extractStreet(spot)}</span><br>
-      <span style="color:#059640;font-weight:600;">${spot.available}/${spot.total} available</span><br>
-      <div style="margin-top:4px;">Status: ${statusHtml(spot,true)}</div>
-      <a href="${navUrl}" target="_blank" style="display:inline-flex;align-items:center;gap:6px;font-weight:800;margin-top:6px;">
-        <i class="lucide lucide-navigation"></i> Navigate
-      </a></div>`;
-
-    marker.addListener('click',()=>{ _infoWindow.setContent(html); _infoWindow.open({anchor:marker,map:_map,shouldFocus:false}); setTimeout(()=>{ if(window.lucide) lucide.createIcons(); },10); });
-    _markerByKey.set(spotKey(spot),{marker,html,spot}); _markers.push(marker);
-  });
-}
-function openSpotOnMap(spot,{pan=true,zoom=16}={}){ const e=_markerByKey.get(spotKey(spot)); if(!e||!_map) return;
-  if(pan){ _map.panTo({lat:spot.lat,lng:spot.lng}); if(_map.getZoom()<zoom) _map.setZoom(zoom); }
-  _infoWindow.setContent(e.html); _infoWindow.open({anchor:e.marker,map:_map,shouldFocus:false});
-}
+let _map,_markers=[],_infoWindow,_markerByKey=new Map(),_initialCenter={lat:-37.814,lng:144.96332},_initialZoom=15;
+function initParkingMap(){_map=new google.maps.Map(document.getElementById('parkingMap'),{center:_initialCenter,zoom:_initialZoom,mapId:"DEMO_MAP_ID",streetViewControl:false,fullscreenControl:false});_infoWindow=new google.maps.InfoWindow();drawMarkers(parkingSpots)}
+function drawMarkers(list){if(!_map)return;_markers.forEach(m=>m.map=null);_markers=[];_markerByKey.clear();list.forEach(spot=>{const img=document.createElement('img');img.src="{% static 'parking-sign-lightblue.png' %}";img.style.width="32px";img.style.height="32px";img.style.display="block";img.style.cursor="pointer";const marker=new google.maps.marker.AdvancedMarkerElement({map:_map,position:{lat:spot.lat,lng:spot.lng},title:spot.name,content:img});const navUrl=googleMapsNavURL(spot.lat,spot.lng,'walking');const html=`<div style="font-size:.95em;min-width:170px;padding:3px 5px;line-height:1.2;"><b style="color:#5b2c91;">${spot.name}</b><br><span style="color:#555;">${extractStreet(spot)}</span><br><span style="color:#059640;font-weight:600;">${spot.available}/${spot.total} available</span><br><div style="margin-top:4px;">Status: ${statusHtml(spot,true)}</div><a href="${navUrl}" target="_blank" style="display:inline-flex;align-items:center;gap:6px;font-weight:800;margin-top:6px;"><i class="lucide lucide-navigation"></i> Navigate</a></div>`;marker.addListener('click',()=>{_infoWindow.setContent(html);_infoWindow.open({anchor:marker,map:_map,shouldFocus:false});setTimeout(()=>{if(window.lucide)lucide.createIcons()},10)});_markerByKey.set(spotKey(spot),{marker,html,spot});_markers.push(marker)})}
+function openSpotOnMap(spot,{pan=true,zoom=16}={}){const e=_markerByKey.get(spotKey(spot));if(!e||!_map)return;if(pan){_map.panTo({lat:spot.lat,lng:spot.lng});if(_map.getZoom()<zoom)_map.setZoom(zoom)}_infoWindow.setContent(e.html);_infoWindow.open({anchor:e.marker,map:_map,shouldFocus:false})}
 
 /* Navigation */
-function googleMapsNavURL(lat,lng,mode='walking'){ return `https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(lat+','+lng)}&travelmode=${mode}`; }
-function navigateTo(spot,mode='walking'){ window.open(googleMapsNavURL(spot.lat,spot.lng,mode),'_blank'); }
+function googleMapsNavURL(lat,lng,mode='walking'){return`https://www.google.com/maps/dir/?api=1&destination=${encodeURIComponent(lat+','+lng)}&travelmode=${mode}`}
 
 /* List render */
-function renderParkingList(listData){
-  const el=document.getElementById('parkingList');
-  el.innerHTML=listData.map(spot=>`
-    <div class="parking-spot-card" tabindex="0">
-      <div class="card-row">
-        <div>
-          <div class="spot-name">${spot.name}</div>
-          <div class="spot-address">${extractStreet(spot)}</div>
-        </div>
-        <span class="badge-available ${spot.badge}">${spot.available}/${spot.total} available</span>
-      </div>
-      <div class="card-row2">
-        <span class="walk-dist"><i class="lucide lucide-map-pin"></i> ${spot.distance}</span>
-        <span class="walk-time"><i class="lucide lucide-clock"></i> ${spot.walkTime} walk</span>
-        <button class="nav-link-mini"><i class="lucide lucide-navigation"></i> Navigate</button>
-      </div>
-      <div class="status-row">${statusHtml(spot,false)}</div>
-    </div>`).join('');
-  if(window.lucide) lucide.createIcons();
-
-  const cards=el.querySelectorAll('.parking-spot-card');
-  const navBtns=el.querySelectorAll('.nav-link-mini');
-  cards.forEach((card,i)=>{
-    card.onclick=(e)=>{ if(e.target.closest('.nav-link-mini')) return;
-      const s=listData[i];
-      document.getElementById('modalTitle').innerHTML = `<i class="lucide lucide-parking-circle"></i> ${s.name}`;
-      document.getElementById('modalContent').innerHTML = `
-        <div style="font-size:1.08em;margin-bottom:8px;color:#8952e7;"><b>Street:</b> ${extractStreet(s)}</div>
-        <div><b>Available:</b> ${s.available}/${s.total}</div>
-        <div><b>Walking:</b> ${s.distance} • ${s.walkTime}</div>
-        <div style="margin-top:4px;"><b>Status:</b> ${statusHtml(s,true)}</div>`;
-      document.getElementById('modalActions').innerHTML = `
-        <a class="btn-action" href="${googleMapsNavURL(s.lat,s.lng,'walking')}" target="_blank"><i class="lucide lucide-navigation"></i> Navigate</a>
-        <a class="btn-action" href="${googleMapsNavURL(s.lat,s.lng,'driving')}" target="_blank"><i class="lucide lucide-car"></i> Drive</a>`;
-      document.getElementById('spotModal').classList.add('active');
-      setTimeout(()=>{ if(window.lucide) lucide.createIcons(); },10);
-      openSpotOnMap(s);
-    };
-    card.onkeydown=(e)=>{ if(e.key==='Enter') card.click(); };
-  });
-  navBtns.forEach((btn,i)=>btn.addEventListener('click',(e)=>{ e.stopPropagation(); navigateTo(listData[i],'walking'); }));
-}
+function renderParkingList(listData){const el=document.getElementById('parkingList');el.innerHTML=listData.map(spot=>`<div class="parking-spot-card" tabindex="0"><div class="card-row"><div><div class="spot-name">${spot.name}</div><div class="spot-address">${extractStreet(spot)}</div></div><span class="badge-available ${spot.badge}">${spot.available}/${spot.total} available</span></div><div class="card-row2"><span class="walk-dist"><i class="lucide lucide-map-pin"></i> ${spot.distance}</span><span class="walk-time"><i class="lucide lucide-clock"></i> ${spot.walkTime} walk</span><button class="nav-link-mini"><i class="lucide lucide-navigation"></i> Navigate</button></div><div class="status-row">${statusHtml(spot,false)}</div></div>`).join('');if(window.lucide)lucide.createIcons();const cards=el.querySelectorAll('.parking-spot-card');const navBtns=el.querySelectorAll('.nav-link-mini');cards.forEach((card,i)=>{card.onclick=e=>{if(e.target.closest('.nav-link-mini'))return;const s=listData[i];document.getElementById('modalTitle').innerHTML=`<i class="lucide lucide-parking-circle"></i> ${s.name}`;document.getElementById('modalContent').innerHTML=`<div style="font-size:1.08em;margin-bottom:8px;color:#8952e7;"><b>Street:</b> ${extractStreet(s)}</div><div><b>Available:</b> ${s.available}/${s.total}</div><div><b>Walking:</b> ${s.distance} • ${s.walkTime}</div><div style="margin-top:4px;"><b>Status:</b> ${statusHtml(s,true)}</div>`;document.getElementById('modalActions').innerHTML=`<a class="btn-action" href="${googleMapsNavURL(s.lat,s.lng,'walking')}" target="_blank"><i class="lucide lucide-navigation"></i> Navigate</a><a class="btn-action" href="${googleMapsNavURL(s.lat,s.lng,'driving')}" target="_blank"><i class="lucide lucide-car"></i> Drive</a>`;document.getElementById('spotModal').classList.add('active');setTimeout(()=>{if(window.lucide)lucide.createIcons()},10);openSpotOnMap(s)};card.onkeydown=e=>{if(e.key==='Enter')card.click()}});navBtns.forEach((btn,i)=>btn.addEventListener('click',e=>{e.stopPropagation();window.open(googleMapsNavURL(listData[i].lat,listData[i].lng,'walking'),'_blank')}))}
 
 /* Modal close */
-function closeModal(){ document.getElementById('spotModal').classList.remove('active'); }
-document.getElementById('spotModal').onclick=(e)=>{ if(e.target===e.currentTarget) closeModal(); };
-document.addEventListener('keydown',(e)=>{ if(e.key==='Escape') closeModal(); });
+function closeModal(){document.getElementById('spotModal').classList.remove('active')}
+document.getElementById('spotModal').onclick=e=>{if(e.target===e.currentTarget)closeModal()}
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()})
 
 /* Loading mask + nav */
-function showLoadingMask(){ const m=document.getElementById('loadingMask'); m.style.display='flex'; setTimeout(()=>m.classList.add('active'),10); }
-function hideLoadingMask(){ const m=document.getElementById('loadingMask'); m.classList.remove('active'); setTimeout(()=>m.style.display='none',250); }
-function attachNavLoading(){ document.querySelectorAll('.navbar .nav-link').forEach(a=>{ a.addEventListener('click',(e)=>{ const href=a.getAttribute('href'); if(!href) return; const url=new URL(href,location.origin); if(a.target==='_blank'||url.origin!==location.origin||url.pathname===location.pathname) return; e.preventDefault(); showLoadingMask(); setTimeout(()=>{ location.href=url.href; },1200); }); }); }
-window.addEventListener('beforeunload',()=>{ showLoadingMask(); });
+function showLoadingMask(){const m=document.getElementById('loadingMask');m.style.display='flex';setTimeout(()=>m.classList.add('active'),10)}
+function hideLoadingMask(){const m=document.getElementById('loadingMask');m.classList.remove('active');setTimeout(()=>m.style.display='none',250)}
+function attachNavLoading(){document.querySelectorAll('.navbar .nav-link').forEach(a=>{a.addEventListener('click',e=>{const href=a.getAttribute('href');if(!href)return;const url=new URL(href,location.origin);if(a.target==='_blank'||url.origin!==location.origin||url.pathname===location.pathname)return;e.preventDefault();showLoadingMask();setTimeout(()=>{location.href=url.href},1200)})})}
+window.addEventListener('beforeunload',()=>{showLoadingMask()})
 
 /* Filters */
-let currentStreet="__ALL__", currentKeyword="";
-function fuzzyIncludes(hay,needle){ hay=(hay||"").toLowerCase(); needle=(needle||"").toLowerCase(); if(!needle) return true; return hay.includes(needle); }
-function applyFiltersAndRender(){
-  let list=parkingSpots.slice();
-  if(currentStreet!=="__ALL__") list=list.filter(s=>extractStreet(s)===currentStreet);
-  if(currentKeyword.trim()) list=list.filter(s=>fuzzyIncludes(extractStreet(s),currentKeyword));
-  renderParkingList(list); renderSpotBalls(list); drawMarkers(list); showToast(`${list.length} results`);
-}
-document.getElementById('streetSelect').addEventListener('change',(e)=>{ currentStreet=e.target.value; applyFiltersAndRender(); });
-const searchInput=document.getElementById('streetSearch'); let _searchDebounce=null;
-searchInput.addEventListener('input',()=>{ clearTimeout(_searchDebounce); _searchDebounce=setTimeout(()=>{ currentKeyword=searchInput.value; applyFiltersAndRender(); },180); });
+let currentStreet="__ALL__",currentKeyword="";
+function fuzzyIncludes(hay,needle){hay=(hay||"").toLowerCase();needle=(needle||"").toLowerCase();if(!needle)return true;return hay.includes(needle)}
+function applyFiltersAndRender(){let list=parkingSpots.slice();if(currentStreet!=="__ALL__")list=list.filter(s=>extractStreet(s)===currentStreet);if(currentKeyword.trim())list=list.filter(s=>fuzzyIncludes(extractStreet(s),currentKeyword));renderParkingList(list);renderSpotBalls(list);drawMarkers(list);showToast(`${list.length} results`)}
+document.getElementById('streetSelect').addEventListener('change',e=>{currentStreet=e.target.value;applyFiltersAndRender()})
+const searchInput=document.getElementById('streetSearch');let _searchDebounce=null;
+searchInput.addEventListener('input',()=>{clearTimeout(_searchDebounce);_searchDebounce=setTimeout(()=>{currentKeyword=searchInput.value;applyFiltersAndRender()},180)})
 
-document.getElementById('filterBtn').addEventListener('click',function(){
-  let list=parkingSpots.filter(spot=>{ const n=parseFloat(spot.distance); const km=spot.distance.includes("km")?n:n/1000; return spot.available>0 && km<=0.4; });
-  if(currentStreet!=="__ALL__") list=list.filter(s=>extractStreet(s)===currentStreet);
-  if(currentKeyword.trim()) list=list.filter(s=>fuzzyIncludes(extractStreet(s),currentKeyword));
-  renderParkingList(list); renderSpotBalls(list); drawMarkers(list); showToast('Filtered: under 400m with available spots');
-});
+document.getElementById('filterBtn').addEventListener('click',function(){let list=parkingSpots.filter(spot=>{const n=parseFloat(spot.distance);const km=spot.distance.includes("km")?n:n/1000;return spot.available>0&&km<=0.4});if(currentStreet!=="__ALL__")list=list.filter(s=>extractStreet(s)===currentStreet);if(currentKeyword.trim())list=list.filter(s=>fuzzyIncludes(extractStreet(s),currentKeyword));renderParkingList(list);renderSpotBalls(list);drawMarkers(list);showToast('Filtered: under 400m with available spots')})
 
-/* Refresh + reset */
-function refreshParkingList(){
-  const list=document.getElementById('parkingList'); list.classList.add('refresh-highlight');
-  fetch("{% url 'live_parking_api' %}")
-    .then(r=>r.json())
-    .then(data=>{
-      parkingSpots.length=0; parkingSpots.push(...data);
-      buildStreetOptions(parkingSpots);
-      currentStreet="__ALL__"; currentKeyword="";
-      document.getElementById('streetSelect').value="__ALL__";
-      document.getElementById('streetSearch').value="";
-      applyFiltersAndRender();
-      setTimeout(()=>list.classList.remove('refresh-highlight'),1200);
-    })
-    .catch(err=>{ console.error('Refresh failed',err); list.classList.remove('refresh-highlight'); });
-}
-
-
-document.getElementById('refreshBtn').addEventListener('click', function () {
-    refreshParkingList();
-    initParkingMap();
-});
+/* Refresh + reset + map back to initial */
+function refreshParkingList(){const list=document.getElementById('parkingList');list.classList.add('refresh-highlight');fetch("{% url 'live_parking_api' %}").then(r=>r.json()).then(data=>{parkingSpots.length=0;parkingSpots.push(...data);buildStreetOptions(parkingSpots);currentStreet="__ALL__";currentKeyword="";document.getElementById('streetSelect').value="__ALL__";document.getElementById('streetSearch').value="";applyFiltersAndRender();list.classList.remove('refresh-highlight');if(_map){_map.setCenter(_initialCenter);_map.setZoom(_initialZoom)}}).catch(err=>{console.error('Refresh failed',err);list.classList.remove('refresh-highlight')})}
+document.getElementById('refreshBtn').addEventListener('click',refreshParkingList)
 
 /* First load */
-window.onload=function(){
-  hideLoadingMask();
-  if(window.lucide) lucide.createIcons();
-  buildStreetOptions(parkingSpots);
-  applyFiltersAndRender();
-  attachNavLoading();
-};
+window.onload=function(){hideLoadingMask();if(window.lucide)lucide.createIcons();buildStreetOptions(parkingSpots);applyFiltersAndRender();attachNavLoading()}
 </script>
 
   <!-- Full Page Loading Mask -->
-  <div id="loadingMask" style="display:none;position:fixed;z-index:9999;left:0;top:0;width:100vw;height:100vh;
-       background:rgba(32,18,77,0.16);backdrop-filter:blur(2.5px);align-items:center;justify-content:center;transition:opacity .22s;">
+  <div id="loadingMask" style="display:none;position:fixed;z-index:9999;left:0;top:0;width:100vw;height:100vh;background:rgba(32,18,77,0.16);backdrop-filter:blur(2.5px);align-items:center;justify-content:center;transition:opacity .22s;">
     <div style="background:#ffffff3c;border-radius:26px;padding:40px 60px;box-shadow:0 8px 28px #421d7999;display:flex;flex-direction:column;align-items:center;gap:16px;">
       <img src="{% static 'car_loading.gif' %}" alt="Loading..." style="width:450px;height:350px;display:block;">
       <span class="golden-glow" style="font-size:3em;letter-spacing:.8px;">Loading…</span>
